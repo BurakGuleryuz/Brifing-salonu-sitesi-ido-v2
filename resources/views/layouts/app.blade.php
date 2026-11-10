@@ -113,7 +113,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center gap-2" href="{{ route('rooms.index') }}">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="{{ route('home') }}">
                 <img src="{{ asset('images/ido-logo.jpg') }}" alt="İDO" style="height:36px; width:auto; border-radius:4px;">
                 <span>Toplantı Yönetim Sistemi</span>
             </a>

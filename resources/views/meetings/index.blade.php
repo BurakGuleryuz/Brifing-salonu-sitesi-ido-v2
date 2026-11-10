@@ -5,7 +5,9 @@
 @section('content')
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h1>Toplantılar</h1>
+        @if($canCreateMeetings)
         <a href="{{ route('meetings.create') }}" class="btn btn-primary">+ Yeni Toplantı</a>
+        @endif
     </div>
 
     <table class="table table-bordered bg-white">

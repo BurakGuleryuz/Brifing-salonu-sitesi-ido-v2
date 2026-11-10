@@ -42,7 +42,7 @@ class LoginController extends Controller
 
         session(['user_id' => $user->id]);
 
-        return redirect()->route('rooms.index')->with('success', 'Hoş geldiniz, ' . $user->name . '.');
+        return redirect()->route('home')->with('success', 'Hoş geldiniz, ' . $user->name . '.');
     }
 
     public function logout(Request $request): RedirectResponse
@@ -89,7 +89,7 @@ class LoginController extends Controller
 
         session(['user_id' => $user->id]);
 
-        return redirect()->route('rooms.index')->with(
+        return redirect()->route('home')->with(
             'success',
             'Hoş geldiniz, ' . $user->name . '! Şirket Kimlik Numaranız: ' . $employeeId . ' — bir sonraki girişleriniz için bu numarayı saklayın.'
         );

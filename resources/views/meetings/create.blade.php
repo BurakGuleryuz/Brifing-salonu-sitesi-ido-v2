@@ -80,7 +80,7 @@
     <label class="form-label">Öncelik Durumu</label>
     <select name="priority" class="form-select" required>
         <option value="normal" {{ old('priority', 'normal') === 'normal' ? 'selected' : '' }}>Normal</option>
-        <option value="acil" {{ old('priority') === 'acil' ? 'selected' : '' }}>🔴 Acil (Herkese mail gönderilir)</option>
+        <option value="acil" {{ old('priority') === 'acil' ? 'selected' : '' }}>🔴 Acil</option>
     </select>
 </div>
 
